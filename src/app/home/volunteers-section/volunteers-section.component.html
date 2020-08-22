@@ -1,0 +1,47 @@
+<div class="valunteers">
+    <div class="first" appParallax [ratio]="0.1">
+        <h2> <span style="color: transparent !important; -webkit-text-stroke: 1px tomato;">We</span>
+            need
+            <span style="color: transparent !important; -webkit-text-stroke: 1px tomato;"> volunteers </span> 
+            <br> around the world 
+        </h2>
+        <p class="w-75">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+
+    </div>
+    <div class="second" appParallax [ratio]="0.3">
+        <div class="countries">
+            <span class="title">Countries</span>
+            <hr style="border-bottom: 1px solid grey; width: 70%;">
+            <span>137</span>
+            <p>
+                Mauris justo nunc, cursus in ex et, laoreet consequat sem. Vestibulum non arcu neque. Lorem ipsum dolor sit amet.
+            </p>
+            <select name="country" id="country">
+                <option selected="selected"> Select </option>
+                <option *ngFor="let c of countries" [value]="c"> {{c}} </option>
+            </select>
+        </div>
+        <div class="people">
+            <span class="title">Volunteers</span>
+            <hr style="border-bottom: 1px solid grey; width: 70%;">
+            <span>143,855</span>
+            <p>
+                Mauris justo nunc, cursus in ex et, laoreet consequat sem. Vestibulum non arcu neque. Lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="join-button">
+                Join
+            </a>
+        </div>
+        <div class="donation">
+            <span class="title">Donation</span>
+            <hr style="border-bottom: 1px solid grey; width: 70%;">
+            <span>$314,618</span>
+            <p>
+                Mauris justo nunc, cursus in ex et, laoreet consequat sem. Vestibulum non arcu neque. Lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="join-button">
+                Donate
+            </a>
+        </div>
+    </div>
+</div>

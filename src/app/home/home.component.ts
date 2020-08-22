@@ -1,0 +1,20 @@
+import { Component, ViewChild, OnInit } from '@angular/core';
+import { EarthSceneComponent } from './earth-scene/earth-scene.component';
+
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+export class HomeComponent implements OnInit {
+
+
+  
+  // @ViewChild(EarthSceneComponent) earthScene;
+  constructor() { }
+
+  ngOnInit() {
+    
+  }
+}

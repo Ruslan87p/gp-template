@@ -1,0 +1,102 @@
+.valunteers {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background: white;
+    margin-top: 10vh;
+}
+.first {
+    margin-top: -10vh;
+    height: calc(300px + 20vh);
+    width: 100%;
+    max-width: 500px;
+    background: url('../../../assets/imgs/hands.png'), whitesmoke;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* max-width: 600px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 10px 20px 30px;
+    top: 0px;
+}
+.first > h2 {
+    padding-top: 10px;
+    color: #636363;
+    font-size: calc(30px + 10*(1920px - 320px)/1600);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.first > p, .second > p {
+    font-size: 16px;
+    color: #2d2d2d;
+}
+.second {
+    height: auto;
+    width: 100%;
+    max-width: 620px;
+    margin-top: 50px;
+    /* background: whitesmoke; */
+    /* background: tomato */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 5px solid tomato; */
+}
+.join-button {
+    /* margin-top: 20px; */
+    padding: 5px 15px;
+    width: 120px;
+    /* border: 1px solid #f39c12; */
+    background: #1abc9c;
+    color: white;
+    /* border-radius: 5px; */
+    /* color: #636363; */
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    transition: ease 150ms;
+}
+
+.countries, .people, .donation {
+    padding: 20px 0 20px 0;
+    height: 100%;
+    width: 100%;
+    font-weight: 900;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    background: whitesmoke;
+    /* border-radius: 10px; */
+}
+.countries > span, .people > span, .donation > span {
+    /* color: #636363; */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#country {
+    width: 120px;
+    /* margin-top: 20px; */
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 1px solid #1abc9c;
+    /* background: #1abc9c; */
+    color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 5px; */
+    font-weight: 500;
+}
+.countries > p, .people > p, .donation > p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2d2d2d;
+    padding: 10px 20px;
+}

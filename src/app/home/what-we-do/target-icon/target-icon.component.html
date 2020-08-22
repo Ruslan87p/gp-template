@@ -1,0 +1,10 @@
+<div class="icons-wrapper">
+    <div *ngFor="let icon of icons; let i = index;" class="icon" (mouseover)="isOnClick(i);" [ngClass]="{'active-icon' : isActive == i}"> 
+        <div *ngIf="icon" class="header pt-3">
+            <h1 class="title">{{icon.title}}</h1>
+            <hr class="hr">
+            <img class="img" src="{{icon.iconImg}}" alt="Icon img">
+            <p class="p-4">{{icon.description}}</p>
+        </div>    
+    </div>
+</div>

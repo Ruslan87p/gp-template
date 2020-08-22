@@ -1,0 +1,49 @@
+<br>
+<div style="height: auto; width: 100%; background: whitesmoke; padding-top: 50px; border-top: 50px solid white;">
+    <h1 class="slogan" appParallax [ratio]="0.3">Let's build the world <br> without child abuse and neglect</h1>
+    <p style="padding-left: 20px; color: #636363;" class="w-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    <br>
+
+    <div id="carousel-controls" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-controls" *ngFor="let s of slides; let i = index;" data-slide-to="i" class="active-pagination"></li>
+        </ol>
+
+        <div class="carousel-inner w-75">
+
+          <div class="carousel-item d-block-inline" *ngFor="let s of slides; let i = index" [ngClass]="i == 0 ? 'active' : ''">
+            <div class="d-flex flex-row justify-content-center align-items-center bg-grey w-100">
+
+                <div class="d-block p-3 m-2 bg-white minHeigh" *ngFor="let ins of s" [ngStyle]="{'background': 'url(' + ins.image + ')'}"> 
+                    <div class="d-flex flex-column align-items-end justify-content-around">
+                        <h2>{{ins.title}}</h2>
+                        <br>
+                        <section>
+                            <p>{{ins.description}}</p>
+                            <a class="programm" src="#">More...</a>
+                        </section>
+                    </div>
+                    
+                </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="controls-wrapper">
+            <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <img src="http://plotkinruslan.com/gp/imgs/arrow.svg" alt="arrow img">
+                </span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <img src="http://plotkinruslan.com/gp/imgs/arrow-left.svg" alt="arrow img">
+              </span>
+            </a>
+        </div>
+
+      </div>
+</div>

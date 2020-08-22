@@ -1,0 +1,103 @@
+.slogan {
+    line-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding-left: 20px;
+    color: #636363;
+}
+
+.carousel-indicators {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    /* left: 0; */
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    /* margin-right: 15%; */
+    /* margin-left: 15%; */
+    list-style: none;
+}
+.carousel-indicators > li {
+    height: 5px !important;
+    border: none;
+}
+.active-pagination {
+    background: #1abc9c;
+}
+.carousel {
+    min-height: 400px;
+}
+.carousel-inner {
+    min-height: 400px;
+}
+.controls-wrapper {
+    width: 25%;
+    height: 100%;
+    /* background: aqua; */
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+.carousel-control-prev {
+    width: auto;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    background: white;
+    width: calc(100% - 20px);
+    height: calc(50% - 20px);
+    margin: 20px;
+}
+.carousel-control-next {
+    width: auto;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    width: 100%;
+    height: 50%;
+    right: 0;
+    top: 50%;
+    background: white;
+    width: calc(100% - 20px);
+    height: calc(50% - 20px);
+}
+.minHeigh {
+    min-height: 300px;
+    height: 500px;
+    background: #636363;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    -webkit-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.50);
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.50);
+}
+.minHeigh > div {
+    height: 100%;
+}
+.minHeigh > div > h2 {
+    font-size: calc(10px + 15*(1920px - 320px)/1600);
+    font-weight: 700;
+    color: whitesmoke;
+}
+section > p {
+    color: whitesmoke;
+}
+.carousel-control-prev > span, .carousel-control-next > span {
+    height: 50px;
+    width: 50px;
+}
+.programm {
+    padding: 10px 25px;
+    color: whitesmoke;
+    background: #2d2d2d;
+}
