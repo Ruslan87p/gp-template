@@ -9,8 +9,6 @@ export class StoriesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log('dfdf');
-  }
+  ngOnInit(): void {}
 
 }
