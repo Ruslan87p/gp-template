@@ -10,7 +10,8 @@ export class StoriesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('ghghgh');
+    console.log('ghghgh + ljdhfgkl');
+    
   }
 
 
