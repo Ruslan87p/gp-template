@@ -11,7 +11,6 @@ export class StoriesComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('ghghgh + ljdhfgkl');
-    
   }
 
 
