@@ -27,3 +27,8 @@
     background-position: center top;
     height: 100%;
 }
+.show-more {
+ font-size: 14px;
+ font-weight: 200;
+ text-decoration: underline;
+}

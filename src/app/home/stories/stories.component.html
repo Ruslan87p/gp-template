@@ -8,12 +8,25 @@
 
 <div class="d-flex flex-column justify-content-center align-items-start w-75">
 
-    <div class="card2 ml-2 mr-2 mt-2 bg-white" *ngFor="let s of stories">
+    <div class="card2 ml-2 mr-2 mt-2 bg-white" *ngFor="let s of stories; let i = index">
         <div class="card-body">
-          <h5 class="card-title">{{s.name}}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{s.job}}</h6>
-          <p class="card-text">{{s.comment}}</p>
-          <a href="#" class="card-link">Another link</a>
+            
+            <div>
+                <h5 class="card-title">{{s.name}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{s.job}}</h6>
+            </div>
+
+            <div class="mb-2">
+                <p class="card-text pb-0 mb-2">{{comment}}
+                    <span class="show-more" [hidden]="isHidden" (click)="showMoreDescription(i)">
+                        Show More
+                        </span>
+                        <span class="show-more" [hidden]="!isHidden" (click)="showLessDescription(i)">
+                        Show Less
+                    </span>
+                </p>
+            </div>
+        
         </div>
       </div>
 
