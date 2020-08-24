@@ -6,14 +6,24 @@
     padding: 50px 0 50px 0;
     border-top: 50px solid white;
 }
-.card2 {
-    position: relative;
-    margin-top: 50px;
-}
+
 .title {
     line-height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     padding-left: 20px;
-    color: #636363;
+    color: whitesmoke;
+    position: relative;
+    padding-top: 350px;
+
+    font-size: calc(30px + 30*(1920px - 320px)/1600);
+    line-height: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.bg-title {
+    background: url('../../../assets/imgs/stories.jpg'), no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
 }

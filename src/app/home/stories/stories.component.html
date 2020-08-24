@@ -1,40 +1,21 @@
 <div class="stories-wrapper d-flex flex-row justify-content-start align-items-start">
 
-<div>
-    <h1 class="title">
+<div class="w-25 bg-title">
+    <h1 class="title" appParallax [ratio]="0.09">
         Our stories
     </h1>
 </div>
 
-<div class="d-flex flex-row justify-content-center align-items-center w-75">
-    <div class="card2 ml-2 mr-2" style="width: 18rem;" appParallax [ratio]="0.02">
+<div class="d-flex flex-column justify-content-center align-items-start w-75">
+
+    <div class="card2 ml-2 mr-2 mt-2 bg-white" *ngFor="let s of stories">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
+          <h5 class="card-title">{{s.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{s.job}}</h6>
+          <p class="card-text">{{s.comment}}</p>
           <a href="#" class="card-link">Another link</a>
         </div>
       </div>
 
-      <div class="card2 ml-2 mr-2" style="width: 18rem;" appParallax [ratio]="0.04">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-
-      <div class="card2 ml-2 mr-2" style="width: 18rem;" appParallax [ratio]="0.02">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
 </div>
 </div>
